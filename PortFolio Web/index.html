@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afzal Khan Portfolio | Web Development & Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">    
+            <a href="#" class="logo">Afzal Khan <span> Portfolio</span></a>
+            
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Transforming Ideas Into <span>Digital Reality</span></h1>
+                <p>I'm a passionate front-end developer and UI/UX designer with over 2 years of experience creating stunning, user-friendly websites and applications that drive results.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Afzal.jpg" alt="Afzal Khan - Web Developer">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="Afzal2.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h2>Hello! I'm Afzal Rind</h2>
+                    <p>I'm a passionate front-end developer and UI/UX designer with over 2years of experience creating stunning, user-friendly websites and applications.</p>
+                    <p>My expertise includes HTML5, CSS3, JavaScript, MySQL, JAVA, Python, and responsive web design. I'm dedicated to writing clean, efficient code and creating intuitive user experiences.</p>
+                    <p>When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new design tools and frameworks.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Web Development</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                <span>ReactJS</span>
+                <span>85%</span>
+            </div>
+            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom website development with clean code and modern frameworks. Responsive designs that work on all devices.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design approach creating intuitive interfaces with exceptional user experience.</p>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>App Development</h3>
+        <p>Cross-platform mobile application development using React Native and other modern technologies.</p>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-icon">
+            <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Search engine optimization to improve your website's visibility and ranking on search engines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="shoppingcart.PNG" alt="Project 1" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>Web Design</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1764&q=80" alt="Project 2" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Fitness App</h3>
+                        <p>App Development</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="ui">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="Project 3" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Banking Dashboard</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Project 4" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Website</h3>
+                        <p>Web Design</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Project 5" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Food Delivery App</h3>
+                        <p>App Development</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <div class="lightbox-nav">
+                <span class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></span>
+                <span class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <img src="" alt="Lightbox Image" id="lightboxImage">
+            <h3 id="lightboxTitle"></h3>
+            <p id="lightboxDesc"></p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <img src="Afzal2.jpg" alt="Client 1">
+                    </div>
+                    <p class="testimonial-text">"Afzal transformed our outdated website into a modern, responsive platform that has significantly increased our conversion rates. His attention to detail and communication throughout the project was exceptional."</p>
+                    <h4 class="testimonial-author">Afzal Rind</h4>
+                    <p class="testimonial-role">Computer Science, Undergrad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    
+                    <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Hyderabad, Sindh</p>
+                            </div>
+                        </div>
+                        
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <p>afzalkhanrind92@gmail.com</p>
+                </div>
+            </div>
+            
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+92 340 9813189</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject" required>
+            </div>
+            
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4 class="logo">AfzaL Khan<span> Portfolio</span></h4>
+                    <p>Transforming ideas into digital reality through innovative web development and design solutions.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/afzalkh9524/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/AfzalKh52771390" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/afzal-khan-924843168/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/khan1020" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">WordPress Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Afzal Khan Rind. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
