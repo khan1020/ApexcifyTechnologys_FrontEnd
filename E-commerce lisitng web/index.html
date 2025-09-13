@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afzal TechGadgets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <!-- Header -->
+            <header>
+                <div class="container">
+                    <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Afzal TechGadgets</span>
+                </div>
+                <div class="header-actions">
+                    <div class="search-filter">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search products..." id="searchInput">
+                        </div>
+                    </div>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+        </div>
+                    </div>
+                </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Filters Sidebar -->
+            <aside class="filters">
+                <h2>Filters</h2>
+                
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="category" value="laptop" checked> Laptops
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="phone" checked> Phones
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="tablet" checked> Tablets
+                        </label>
+                        <label>
+                                        <input type="checkbox" name="category" value="accessory" checked> Accessories
+                                    </label>
+                                </div>
+                            </div>
+                            
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="2000" value="2000" id="priceRange">
+                        <div class="price-values">
+                            <span>$0</span>
+                            <span>$2000</span>
+                        </div>
+                        <div class="current-price">Selected: $<span id="currentPrice">2000</span></div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Condition</h3>
+                    <div class="filter-options">
+                        <label>
+                                    <input type="checkbox" name="condition" value="new" checked> New
+                                </label>
+                        <label>
+                            <input type="checkbox" name="condition" value="used" checked> Used
+                        </label>
+                        <label>
+                                        <input type="checkbox" name="condition" value="refurbished" checked> Refurbished
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" id="applyFilters" style="width: 100%;">
+                    <i class="fas fa-filter"></i> Apply Filters
+                </button>
+            </aside>
+
+            <!-- Productign Section -->
+            <section class="products">
+        <div class="products-header">
+            <h2>Latest Tech Products</h2>
+            <div class="view-options">
+                        <button class="active" id="gridView"><i class="fas fa-th"></i></button>
+                    <button id="listView"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- will loade product from js here>   -->
+            </div>
+            
+    <div class="products-list" id="productsList">
+        <!-- loadList JavaScript -->
+        </div>
+        
+        <div class="products-navigation">
+            <button class="nav-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Product Detail Modwl -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Product Details</h2>
+                <span class="close-modal" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2 class="cart-title">Your Shopping Cart</h2>
+            <span class="close-cart" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items js -->
+        </div>
+<div class="cart-footer">
+    <div class="cart-totals">
+        <div class="total-row">
+            <span class="total-label">Subtotal</span>
+            <span class="total-value" id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="total-row">
+            <span class="total-label">Shipping</span>
+            <span class="total-value" id="cartShipping">$0.00</span>
+        </div>
+        <div class="total-row">
+                    <span class="total-label">Tax</span>
+                    <span class="total-value" id="cartTax">$0.00</span>
+                </div>
+                <div class="total-row grand-total">
+                    <span class="total-label">Total</span>
+                    <span class="total-value" id="cartTotal">$0.00</span>
+                </div>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Product added to cart!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Afzal TechGadgets</h3>
+                    <p>Your one-stop shop for the latest technology products and gadgets.</p>
+                </div>
+                
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Hyderabad, City</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +92 340 9813189</a></li>
+                        <li><a href="mailto:afzalkhanrind92@gmail.com"><i class="fas fa-envelope"></i> afzalkhanrind92@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023  afzalTechGadgets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
